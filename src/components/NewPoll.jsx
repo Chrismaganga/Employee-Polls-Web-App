@@ -45,29 +45,36 @@ const NewPoll = (props) => {
 
 	return (
 		<div className="new-poll">
-			<h1 className="new-poll-heading">Add a new poll</h1>
+			<h1 className="new-poll-heading">Add new poll</h1>
 			<form onSubmit={handlePollSubmit} className="poll-form">
-				Would you rather <br />
+				Would you rather <br /> 
+				or
+			
 				<input
 					data-testid="test-option-one"
 					name="optionOneText"
+					label="optionOneText"
+					placeholder='option one'
 					value={question.optionOneText}
 					onChange={handleInputChange}
 					className="input-margin"
 					type="text"
 					size="50"
 				/>
-				or <br />
+				<br/>
+				OR  <br />
 				<input
 					data-testid="test-option-two"
 					name="optionTwoText"
+					label="optionTwoText"
+					placeholder='option two'
 					value={question.optionTwoText}
 					onChange={handleInputChange}
 					className="input-margin"
 					type="text"
 					size="50"
 				/>
-				?
+				{""}?
 				<br />
 				<button
 					data-testid="test-submit-button"
