@@ -47,8 +47,8 @@ const NewPoll = (props) => {
 		<div className="new-poll">
 			<h1 className="new-poll-heading">Add new poll</h1>
 			<form onSubmit={handlePollSubmit} className="poll-form">
-				Would you rather <br /> 
-				or
+				Would you rather vote or create a poll?<br /> 
+			
 			
 				<input
 					data-testid="test-option-one"
@@ -61,8 +61,9 @@ const NewPoll = (props) => {
 					type="text"
 					size="50"
 				/>
+			
 				<br/>
-				OR  <br />
+			
 				<input
 					data-testid="test-option-two"
 					name="optionTwoText"
@@ -74,7 +75,7 @@ const NewPoll = (props) => {
 					type="text"
 					size="50"
 				/>
-				{""}?
+			
 				<br />
 				<button
 					data-testid="test-submit-button"
