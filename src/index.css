@@ -1,8 +1,8 @@
 :root {
-	--dark: rgb(74, 52, 202);
-	--middle: rgb(163, 54, 11);
-	--soft: rgb(168, 165, 13);
-	--light: rgb(180, 199, 14);
+	--dark: rgb(8, 58, 167);
+	--middle: rgb(190, 121, 18);
+	--soft: rgb(128, 129, 204);
+	--light: rgb(179, 162, 17);
 }
 
 body {
@@ -24,6 +24,15 @@ body {
 	border-radius: 8px;
 	padding: 20px;
 	text-align: center;
+}
+.LoadingBar {
+	width: 100%;
+	height: 4px;
+	background-color: #007bff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
 }
 
 /* NAVBAR */
@@ -68,11 +77,11 @@ body {
 .footer {
 	width: 100%;
 	background-color: var(--dark);
-	color: white;
+	color: rgb(192, 8, 8);
 	position: fixed;
 	bottom: 0;
 	left: 0;
-	height: 60px;
+	height: 150px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -84,16 +93,65 @@ body {
 .login-container {
     width: 100%;
     max-width: 400px;
-    margin: 120px auto 80px;  /* Increased top margin for more space from navbar */
-    background-color: #58689e;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 120px auto 80px;
+    background-color: #32afe0;
+    box-shadow: 0 4px 8px rgba(5, 155, 130, 0.1);
     padding: 30px;
-    border-radius: 8px;
-    position: relative;  /* Added for better positioning */
+    border-radius: 10px;
+    position: relative;  
     display: flex;
     flex-direction: column;
     align-items: center;
+	justify-content: center;
+
+} 
+
+.login-form {
+    background: rgb(165, 149, 149);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(4, 35, 82, 0.1);
+    width: 100%;
+    max-width: 400px;
 }
+
+.login-form h2 {
+    text-align: center;
+    color: var(--dark);
+    margin-bottom: 1.5rem;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--dark);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.login-form button:hover {
+    background-color: var(--middle);
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
 
 .login-box {
     width: 100%;
@@ -120,7 +178,7 @@ body {
 	
 }
 p{
-	color: #0d048b;
+	color: #353163;
 	font-weight: bold;
 	font-size: 1.2rem;
 }
@@ -333,7 +391,7 @@ input[type="password"]:focus {
 
 
 
-/* DASHBOARD */
+/* Home */
 
 .dashboard {
 	padding: 70px 0;
@@ -522,4 +580,48 @@ input[type="password"]:focus {
 	padding-right: 15px;
 	padding-top: 10px;
 	cursor: pointer;
+}
+
+/* privateRoute */
+.private-container {
+    min-height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.private-content {
+    background-color: var(--background-card);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.private-title {
+    color: var(--error-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.private-message {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.private-link {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.private-link:hover {
+    background-color: var(--primary-hover);
 }

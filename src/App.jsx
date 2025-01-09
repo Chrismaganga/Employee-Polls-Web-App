@@ -1,5 +1,5 @@
 import { handleInitialData } from './actions/shared'
-import { Fragment, useEffect } from 'react'
+import { useEffect } from 'react'
 import { connect } from 'react-redux'
 import { LoadingBar } from 'react-redux-loading-bar'
 import { Routes, Route } from 'react-router-dom'
@@ -12,7 +12,7 @@ import Leaderboard from './components/Leaderboard'
 import Login from './components/Login'
 import NotFound from './components/NotFound'
 import Footer from './components/Footer'
-import './styles/app.css'
+import './index.css'
 
 const App = ({ loading, dispatch }) => {
 	useEffect(() => {
@@ -20,24 +20,26 @@ const App = ({ loading, dispatch }) => {
 	}, [dispatch])
 
 	return (
-		<Fragment>
+		<>
 			<LoadingBar />
 			<div className="app-container">
-				<Navbar />
 				{loading === true ? (
 					<Login />
 				) : (
-					<Routes>
-						<Route path="*" element={<NotFound page="page" />} />
-						<Route path="/" element={<LandingPage />} />
-						<Route path="/questions/:question_id" element={<PollPage />} />
-						<Route path="/add" element={<NewPoll />} />
-						<Route path="/leaderboard" element={<Leaderboard />} />
-					</Routes>
+					<>
+						<Navbar />
+						<Routes>
+							<Route path="*" element={<NotFound page="page" />} />
+							<Route path="/" element={<LandingPage />} />
+							<Route path="/questions/:question_id" element={<PollPage />} />
+							<Route path="/add" element={<NewPoll />} />
+							<Route path="/leaderboard" element={<Leaderboard />} />
+						</Routes>
+					</>
 				)}
 				<Footer />
 			</div>
-		</Fragment>
+		</>
 	)
 }
 

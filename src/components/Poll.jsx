@@ -3,23 +3,33 @@ import PropTypes from 'prop-types'
 import AnsweredPoll from './AnsweredPoll'
 import UnansweredPoll from './UnansweredPoll'
 
+
 const Poll = (props) => {
-	const { poll, authedUser } = props
-	const { optionOne, optionTwo } = poll
+    const { poll, authedUser } = props
+    
+    if (!poll) {
+        return <div>Loading...</div>;
+    }
 
-	const userChoseOptionOne = optionOne.votes.includes(authedUser)
-	const userChoseOptionTwo = optionTwo.votes.includes(authedUser)
-	const notAnsweredYet = !userChoseOptionOne && !userChoseOptionTwo
+    const { optionOne, optionTwo } = poll
+    
+    if (!optionOne || !optionTwo) {
+        return <div>Error: Invalid poll data</div>;
+    }
 
-	return (
-		<div className="poll-container">
-			{notAnsweredYet ? (
-				<UnansweredPoll poll={poll} />
-			) : (
-				<AnsweredPoll poll={poll} />
-			)}
-		</div>
-	)
+    const userChoseOptionOne = optionOne.votes?.includes(authedUser) || false
+    const userChoseOptionTwo = optionTwo.votes?.includes(authedUser) || false
+    const notAnsweredYet = !userChoseOptionOne && !userChoseOptionTwo
+
+    return (
+        <div data-testid="poll-container" className="poll-container">
+            {notAnsweredYet ? (
+                <UnansweredPoll poll={poll} />
+            ) : (
+                <AnsweredPoll poll={poll} />
+            )}
+        </div>
+    )
 }
 
 Poll.propTypes = {
