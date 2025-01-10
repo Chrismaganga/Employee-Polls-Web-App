@@ -61,6 +61,7 @@ const LandingPage = (props) => {
 						<li key={q.id}>
 							<Link to={`/questions/:question_${q.id}`} className="none">
 								<Poll id={q.id} />
+								console.log(q)
 							</Link>
 						</li>
 					))

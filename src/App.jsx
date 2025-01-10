@@ -12,6 +12,7 @@ import Leaderboard from './components/Leaderboard'
 import Login from './components/Login'
 import NotFound from './components/NotFound'
 import Footer from './components/Footer'
+import PrivateRoute from './components/PrivateRoute'
 import './index.css'
 
 const App = ({ loading, dispatch }) => {
@@ -29,11 +30,12 @@ const App = ({ loading, dispatch }) => {
 					<>
 						<Navbar />
 						<Routes>
-							<Route path="*" element={<NotFound page="page" />} />
-							<Route path="/" element={<LandingPage />} />
-							<Route path="/questions/:question_id" element={<PollPage />} />
-							<Route path="/add" element={<NewPoll />} />
-							<Route path="/leaderboard" element={<Leaderboard />} />
+							
+							<Route path="/" element={<PrivateRoute><LandingPage /></PrivateRoute>} />
+							<Route path="/questions/:question_id" element={<PrivateRoute ><PollPage /></PrivateRoute >} />
+							<Route path="/add" element={<PrivateRoute ><NewPoll /></PrivateRoute >} />
+							<Route path="/leaderboard" element={<PrivateRoute ><Leaderboard /></PrivateRoute>} />
+							<Route path="*" element={<NotFound />} />
 						</Routes>
 					</>
 				)}

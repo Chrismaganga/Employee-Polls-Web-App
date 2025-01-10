@@ -1,12 +1,17 @@
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-function NotFound() {
+function NotFound({ message }) {
   return (
     <div className="notfound-container">
-      <h2>404 - Page Not Found</h2>
-      <Link to="/">Go to Home</Link>
+      <h2>404 - {message || 'Page Not Found'}</h2>
+      <Link to="/login">Go to Login</Link>
     </div>
   );
 }
+
+NotFound.propTypes = {
+  message: PropTypes.string
+};
 
 export default NotFound;
