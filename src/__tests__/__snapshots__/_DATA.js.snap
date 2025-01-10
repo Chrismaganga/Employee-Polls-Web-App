@@ -1,0 +1,348 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`_DATA.js Snapshots should match formatted question snapshot 1`] = `
+{
+  "author": "johndoe",
+  "optionOne": {
+    "text": "Option One Test",
+    "votes": [],
+  },
+  "optionTwo": {
+    "text": "Option Two Test",
+    "votes": [],
+  },
+}
+`;
+
+exports[`_DATA.js Snapshots should match initial data snapshot 1`] = `
+{
+  "questions": {
+    "6ni6ok3ym7mf1p33lnez": {
+      "author": "bobsmith",
+      "id": "6ni6ok3ym7mf1p33lnez",
+      "optionOne": {
+        "text": "Focus on user experience",
+        "votes": [
+          "johndoe",
+        ],
+      },
+      "optionTwo": {
+        "text": "Focus on performance",
+        "votes": [
+          "bobsmith",
+        ],
+      },
+      "timestamp": 1468479767190,
+    },
+    "8xf0y6ziyjabvozdd253nd": {
+      "author": "johndoe",
+      "id": "8xf0y6ziyjabvozdd253nd",
+      "optionOne": {
+        "text": "Build a React Native mobile app",
+        "votes": [
+          "johndoe",
+        ],
+      },
+      "optionTwo": {
+        "text": "Build a Progressive Web App",
+        "votes": [],
+      },
+      "timestamp": 1467166872634,
+    },
+    "am8ehyc8byjqgar0jgpub9": {
+      "author": "johndoe",
+      "id": "am8ehyc8byjqgar0jgpub9",
+      "optionOne": {
+        "text": "Code reviews before deployment",
+        "votes": [],
+      },
+      "optionTwo": {
+        "text": "Automated testing before deployment",
+        "votes": [
+          "johndoe",
+        ],
+      },
+      "timestamp": 1488579767190,
+    },
+    "loxhs1bqm25b708cmbf3g": {
+      "author": "janedoe",
+      "id": "loxhs1bqm25b708cmbf3g",
+      "optionOne": {
+        "text": "Weekly team meetings",
+        "votes": [],
+      },
+      "optionTwo": {
+        "text": "Daily standup meetings",
+        "votes": [],
+      },
+      "timestamp": 1482579767190,
+    },
+    "vthrdm985a262al8qx3do": {
+      "author": "janedoe",
+      "id": "vthrdm985a262al8qx3do",
+      "optionOne": {
+        "text": "Learn GraphQL",
+        "votes": [
+          "janedoe",
+        ],
+      },
+      "optionTwo": {
+        "text": "Learn REST API design",
+        "votes": [
+          "bobsmith",
+        ],
+      },
+      "timestamp": 1489579767190,
+    },
+    "xj352vofupe1dqz9emx13r": {
+      "author": "bobsmith",
+      "id": "xj352vofupe1dqz9emx13r",
+      "optionOne": {
+        "text": "Monthly deployments",
+        "votes": [
+          "bobsmith",
+        ],
+      },
+      "optionTwo": {
+        "text": "Continuous deployment",
+        "votes": [
+          "janedoe",
+          "alicegreen",
+        ],
+      },
+      "timestamp": 1493579767190,
+    },
+  },
+  "users": {
+    "alicegreen": {
+      "answers": {
+        "xj352vofupe1dqz9emx13r": "optionTwo",
+      },
+      "avatarURL": "https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=Alice+Green",
+      "id": "alicegreen",
+      "name": "Alice Green",
+      "password": "pass321",
+      "questions": [],
+    },
+    "bobsmith": {
+      "answers": {
+        "6ni6ok3ym7mf1p33lnez": "optionTwo",
+        "vthrdm985a262al8qx3do": "optionTwo",
+        "xj352vofupe1dqz9emx13r": "optionOne",
+      },
+      "avatarURL": "https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=Bob+Smith",
+      "id": "bobsmith",
+      "name": "Bob Smith",
+      "password": "pass789",
+      "questions": [
+        "6ni6ok3ym7mf1p33lnez",
+        "xj352vofupe1dqz9emx13r",
+      ],
+    },
+    "janedoe": {
+      "answers": {
+        "vthrdm985a262al8qx3do": "optionOne",
+        "xj352vofupe1dqz9emx13r": "optionTwo",
+      },
+      "avatarURL": "https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=Jane+Doe",
+      "id": "janedoe",
+      "name": "Jane Doe",
+      "password": "pass456",
+      "questions": [
+        "loxhs1bqm25b708cmbf3g",
+        "vthrdm985a262al8qx3do",
+      ],
+    },
+    "johndoe": {
+      "answers": {
+        "6ni6ok3ym7mf1p33lnez": "optionOne",
+        "8xf0y6ziyjabvozdd253nd": "optionOne",
+        "am8ehyc8byjqgar0jgpub9": "optionTwo",
+      },
+      "avatarURL": "https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=John+Doe",
+      "id": "johndoe",
+      "name": "John Doe",
+      "password": "pass123",
+      "questions": [
+        "8xf0y6ziyjabvozdd253nd",
+        "am8ehyc8byjqgar0jgpub9",
+      ],
+    },
+  },
+}
+`;
+
+exports[`_DATA.js Snapshots should match questions snapshot 1`] = `
+{
+  "6ni6ok3ym7mf1p33lnez": {
+    "author": "bobsmith",
+    "id": "6ni6ok3ym7mf1p33lnez",
+    "optionOne": {
+      "text": "Focus on user experience",
+      "votes": [
+        "johndoe",
+      ],
+    },
+    "optionTwo": {
+      "text": "Focus on performance",
+      "votes": [
+        "bobsmith",
+      ],
+    },
+    "timestamp": 1468479767190,
+  },
+  "8xf0y6ziyjabvozdd253nd": {
+    "author": "johndoe",
+    "id": "8xf0y6ziyjabvozdd253nd",
+    "optionOne": {
+      "text": "Build a React Native mobile app",
+      "votes": [
+        "johndoe",
+      ],
+    },
+    "optionTwo": {
+      "text": "Build a Progressive Web App",
+      "votes": [],
+    },
+    "timestamp": 1467166872634,
+  },
+  "am8ehyc8byjqgar0jgpub9": {
+    "author": "johndoe",
+    "id": "am8ehyc8byjqgar0jgpub9",
+    "optionOne": {
+      "text": "Code reviews before deployment",
+      "votes": [],
+    },
+    "optionTwo": {
+      "text": "Automated testing before deployment",
+      "votes": [
+        "johndoe",
+      ],
+    },
+    "timestamp": 1488579767190,
+  },
+  "loxhs1bqm25b708cmbf3g": {
+    "author": "janedoe",
+    "id": "loxhs1bqm25b708cmbf3g",
+    "optionOne": {
+      "text": "Weekly team meetings",
+      "votes": [],
+    },
+    "optionTwo": {
+      "text": "Daily standup meetings",
+      "votes": [],
+    },
+    "timestamp": 1482579767190,
+  },
+  "vthrdm985a262al8qx3do": {
+    "author": "janedoe",
+    "id": "vthrdm985a262al8qx3do",
+    "optionOne": {
+      "text": "Learn GraphQL",
+      "votes": [
+        "janedoe",
+      ],
+    },
+    "optionTwo": {
+      "text": "Learn REST API design",
+      "votes": [
+        "bobsmith",
+      ],
+    },
+    "timestamp": 1489579767190,
+  },
+  "xj352vofupe1dqz9emx13r": {
+    "author": "bobsmith",
+    "id": "xj352vofupe1dqz9emx13r",
+    "optionOne": {
+      "text": "Monthly deployments",
+      "votes": [
+        "bobsmith",
+      ],
+    },
+    "optionTwo": {
+      "text": "Continuous deployment",
+      "votes": [
+        "janedoe",
+        "alicegreen",
+      ],
+    },
+    "timestamp": 1493579767190,
+  },
+}
+`;
+
+exports[`_DATA.js Snapshots should match saved answer snapshot 1`] = `true`;
+
+exports[`_DATA.js Snapshots should match saved question snapshot 1`] = `
+{
+  "author": "johndoe",
+  "optionOne": {
+    "text": "New Option One",
+    "votes": [],
+  },
+  "optionTwo": {
+    "text": "New Option Two",
+    "votes": [],
+  },
+}
+`;
+
+exports[`_DATA.js Snapshots should match users snapshot 1`] = `
+{
+  "alicegreen": {
+    "answers": {
+      "xj352vofupe1dqz9emx13r": "optionTwo",
+    },
+    "avatarURL": "https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=Alice+Green",
+    "id": "alicegreen",
+    "name": "Alice Green",
+    "password": "pass321",
+    "questions": [],
+  },
+  "bobsmith": {
+    "answers": {
+      "6ni6ok3ym7mf1p33lnez": "optionTwo",
+      "vthrdm985a262al8qx3do": "optionTwo",
+      "xj352vofupe1dqz9emx13r": "optionOne",
+    },
+    "avatarURL": "https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=Bob+Smith",
+    "id": "bobsmith",
+    "name": "Bob Smith",
+    "password": "pass789",
+    "questions": [
+      "6ni6ok3ym7mf1p33lnez",
+      "xj352vofupe1dqz9emx13r",
+    ],
+  },
+  "janedoe": {
+    "answers": {
+      "vthrdm985a262al8qx3do": "optionOne",
+      "xj352vofupe1dqz9emx13r": "optionTwo",
+    },
+    "avatarURL": "https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=Jane+Doe",
+    "id": "janedoe",
+    "name": "Jane Doe",
+    "password": "pass456",
+    "questions": [
+      "loxhs1bqm25b708cmbf3g",
+      "vthrdm985a262al8qx3do",
+    ],
+  },
+  "johndoe": {
+    "answers": {
+      "6ni6ok3ym7mf1p33lnez": "optionOne",
+      "8xf0y6ziyjabvozdd253nd": "optionOne",
+      "am8ehyc8byjqgar0jgpub9": "optionTwo",
+    },
+    "avatarURL": "https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=John+Doe",
+    "id": "johndoe",
+    "name": "John Doe",
+    "password": "pass123",
+    "questions": [
+      "8xf0y6ziyjabvozdd253nd",
+      "am8ehyc8byjqgar0jgpub9",
+    ],
+  },
+}
+`;
