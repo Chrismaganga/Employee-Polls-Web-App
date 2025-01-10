@@ -1,16 +1,29 @@
-# React + Vite
+# Employees-polls-web-app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-<!-- npm test -- -u -->
-Currently, two official plugins are available:
+-**react-redux-jest**
+This is a React application that uses Redux for state management and Jest for testing. The application includes features such as user authentication, polling, and leaderboard functionalities.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# polls-app
-git clone https://github.com/Chrismaganga/polls-app.git
+## Features
 
-cd polls-app
+- User authentication
+- Poll creation and voting
+- Leaderboard display
+- Error handling and routing with React Router
+
+## Technologies Used
+
+- **React**: A JavaScript library for building user interfaces
+- **Redux-toolkit**: A state management library for JavaScript applications
+- **React Router**: For handling routing and navigation
+- **Jest**: A testing framework for JavaScript
+- **React Testing Library**: For testing React components
+
+1. **Clone the repository**
+git clone https://github.com/Chrismaganga/-Employee-Polls-Web-App
+
+cd Employee-Polls-Web-App
 
 npm install
 
 npm run dev
+npm test
