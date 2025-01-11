@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
 import PropTypes from 'prop-types';
 import Author from "./Author";
-import formatDate from "../utils/formatDate";
+import formatDate from "../lib/formatDate";
 import { handleAnswerQuestion } from "../actions/questions";
 import { updateUsersAnswers } from "../actions/users";
 

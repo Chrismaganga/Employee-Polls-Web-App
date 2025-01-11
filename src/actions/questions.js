@@ -1,5 +1,5 @@
 import { showLoading, hideLoading } from "react-redux-loading-bar";
-import { _saveQuestion, _saveQuestionAnswer } from "../utils/_DATA";
+import { _saveQuestion, _saveQuestionAnswer } from "../lib/_DATA";
 import { updateUsersQuestions } from "./users";
 
 export const RECEIVE_QUESTIONS = "RECEIVE_QUESTIONS";

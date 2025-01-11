@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import Poll from './Poll'
 
-const LandingPage = (props) => {
+const Home = (props) => {
 	const { authedUser, questionIds, questions } = props
 
 	let questionsArr = []
@@ -59,9 +59,8 @@ const LandingPage = (props) => {
 				{questionsToDisplay.length > 0 ? (
 					questionsToDisplay.map((q) => (
 						<li key={q.id}>
-							<Link to={`/questions/:question_${q.id}`} className="none">
+							<Link to={`/questions/:question_${q.id}`} className="link-home">
 								<Poll id={q.id} />
-								console.log(q)
 							</Link>
 						</li>
 					))
@@ -73,7 +72,7 @@ const LandingPage = (props) => {
 	)
 }
 
-LandingPage.propTypes = {
+Home.propTypes = {
   authedUser: PropTypes.string.isRequired,
   questionIds: PropTypes.array.isRequired,
   questions: PropTypes.object.isRequired
@@ -87,4 +86,4 @@ const mapStateToProps = ({ questions, authedUser }) => ({
 	questions,
 })
 
-export default connect(mapStateToProps)(LandingPage)
+export default connect(mapStateToProps)(Home)

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import Poll from './Poll'
 import NotFound from './NotFound'
 
-const PollPage = (props) => {
+const PollList = (props) => {
 	const { idsArr } = props
 
 	const { question_id } = useParams()
@@ -17,7 +17,7 @@ const PollPage = (props) => {
 	)
 }
 
-PollPage.propTypes = {
+PollList.propTypes = {
 	idsArr: PropTypes.arrayOf(PropTypes.string).isRequired
 }
 
@@ -28,4 +28,4 @@ const mapStateToProps = ({ questions }) => {
 	}
 }
 
-export default connect(mapStateToProps)(PollPage)
+export default connect(mapStateToProps)(PollList)

@@ -4,11 +4,14 @@ import AnsweredPoll from './AnsweredPoll'
 import UnansweredPoll from './UnansweredPoll'
 
 
+
 const Poll = (props) => {
     const { poll, authedUser } = props
     
     if (!poll) {
-        return <div>Loading...</div>;
+        return <div>
+            Loading...
+            </div>;
     }
 
     const { optionOne, optionTwo } = poll
@@ -43,3 +46,4 @@ const mapStateToProps = ({ authedUser, questions }, { id }) => {
 }
 
 export default connect(mapStateToProps)(Poll)
+

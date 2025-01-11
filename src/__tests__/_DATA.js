@@ -14,7 +14,7 @@ import {
   _saveQuestion,
   _saveQuestionAnswer,
   generateUID,
-} from '../utils/_DATA';
+} from '../lib/_DATA';
 
 describe('_DATA.js Snapshots', () => {
   it('should match users snapshot', async () => {

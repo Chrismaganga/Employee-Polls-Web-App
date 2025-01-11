@@ -8,8 +8,8 @@ import { useNavigate } from 'react-router-dom';
 const Login = (props) => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
-    username: '',
-    password: '',
+    username: 'johndoe',
+    password: 'pass123',
   });
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
@@ -103,11 +103,6 @@ const Login = (props) => {
           </button>
         </form>
         <div className="login-footer">
-          <p>Available Users:</p>
-          <ul className="users-list">
-            <li>johndoe / pass123</li>
-            <li>janedoe / pass456</li>
-          </ul>
         </div>
       </div>
     </div>
