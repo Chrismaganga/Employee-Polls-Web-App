@@ -74,7 +74,7 @@ body {
 }
 
 /* FOOTER */
-.footer {
+/* .footer {
 	width: 100%;
 	background-color: var(--dark);
 	color: rgb(192, 8, 8);
@@ -86,7 +86,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	font-size: 14px;
-}
+} */
 
 
 /* LOGIN */
@@ -379,7 +379,7 @@ input[type="password"]:focus {
 	font-style: italic;
 	font-weight: bold;
 	font-size: 1.2rem;
-	
+
 }
 
 .dashboard-heading {
@@ -395,9 +395,9 @@ input[type="password"]:focus {
 /* POLL */
 
 .dashboard ul {
-	margin: 0;
-	padding: 0;
 	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .poll-heading {
@@ -595,4 +595,14 @@ input[type="password"]:focus {
 
 .private-link:hover {
     background-color: var(--primary-hover);
+}
+/* footer */
+.footer{
+	background-color: var(--dark);
+	color: var(--light);
+	text-align: center;
+	padding: 0px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
