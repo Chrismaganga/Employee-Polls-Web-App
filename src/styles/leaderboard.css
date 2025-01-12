@@ -1,0 +1,156 @@
+Base styles
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f3f4f6, #ffffff);
+    color: #333;
+  }
+  
+  .dashboard {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .dashboard-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    border: 2px solid #007bff;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #007bff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+  
+  .button.active {
+    background-color: #007bff;
+    color: #0f960a;
+    
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: var(--dark);
+    font-weight: bold;
+  }
+  
+  li {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+  }
+  
+  .none-poll {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    background-color: #f9fafb;
+    transition: all 0.3s ease;
+  }
+  
+  .none-poll:hover {
+    background-color: #007bff;
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  /* Default content styles */
+  .default-content {
+    text-align: center;
+    padding: 20px;
+    border: 2px dashed #007bff;
+    border-radius: 8px;
+    background-color: #f9fafb;
+  }
+  
+  .default-content h2 {
+    color: #007bff;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .default-content p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .default-content .links-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .default-content .links-list li {
+    margin: 10px 0;
+  }
+  
+  .default-content .links-list a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .default-content .links-list a:hover {
+    color: #0056b3;
+  }
+  
+  /* No questions message */
+  .no-questions {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .dashboard {
+      padding: 10px;
+    }
+  
+    .button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .default-content h2 {
+      font-size: 20px;
+    }
+  
+    .default-content p {
+      font-size: 14px;
+    }
+  
+    .none-poll {
+      font-size: 14px;
+      padding: 10px;
+    }
+ 
+  }

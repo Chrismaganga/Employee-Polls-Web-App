@@ -28,7 +28,7 @@ body {
 .LoadingBar {
 	width: 100%;
 	height: 4px;
-	background-color: #007bff;
+	background-color: #9c9a07a2;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -580,13 +580,59 @@ input[type="password"]:focus {
 .private-link:hover {
     background-color: var(--primary-hover);
 }
-/* footer */
-.footer{
-	background-color: var(--dark);
-	color: var(--light);
-	text-align: center;
-	padding: 0px;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
+
+
+/* landing */
+
+
+.create-poll,
+.leaderboard {
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  gap: 20px;
+  margin-top: 20px;
+  background-color: var(--middle);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center; 
+ transition: background-color 0.3s ease;
+}
+
+
+.create-poll:hover {
+  background-color: #0db31b;
+}
+
+.leaderboard:hover {
+  background-color: #0073e6; 
+}
+
+
+.landing-buttons {
+  display: flex;
+  width: 100%;
+  gap: 20px; 
+  justify-content: space-between;*/
+}
+
+
+.landing-buttons .button {
+  flex: 1;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: var(--middle);
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+
+.landing-buttons .button:hover {
+  background-color: #0056b3;
 }

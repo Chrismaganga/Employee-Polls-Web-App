@@ -1,4 +1,3 @@
-// USERS
 let users = {
   johndoe: {
     id: "johndoe",
@@ -43,6 +42,86 @@ let users = {
     answers: {
       xj352vofupe1dqz9emx13r: "optionTwo",
     },
+    questions: [],
+  },
+  tomharris: {
+    id: "tomharris",
+    password: "pass001",
+    name: "Tom Harris",
+    avatarURL: "https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=Tom+Harris",
+    answers: {},
+    questions: [],
+  },
+  emilywhite: {
+    id: "emilywhite",
+    password: "pass002",
+    name: "Emily White",
+    avatarURL: "https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=Emily+White",
+    answers: {},
+    questions: [],
+  },
+  sarahlee: {
+    id: "sarahlee",
+    password: "pass003",
+    name: "Sarah Lee",
+    avatarURL: "https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=Sarah+Lee",
+    answers: {},
+    questions: [],
+  },
+  michaelbrown: {
+    id: "michaelbrown",
+    password: "pass004",
+    name: "Michael Brown",
+    avatarURL: "https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=Michael+Brown",
+    answers: {},
+    questions: [],
+  },
+  racheltaylor: {
+    id: "racheltaylor",
+    password: "pass005",
+    name: "Rachel Taylor",
+    avatarURL: "https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=Rachel+Taylor",
+    answers: {},
+    questions: [],
+  },
+  danielmartin: {
+    id: "danielmartin",
+    password: "pass006",
+    name: "Daniel Martin",
+    avatarURL: "https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=Daniel+Martin",
+    answers: {},
+    questions: [],
+  },
+  sophiaadams: {
+    id: "sophiaadams",
+    password: "pass007",
+    name: "Sophia Adams",
+    avatarURL: "https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=Sophia+Adams",
+    answers: {},
+    questions: [],
+  },
+  liamwilson: {
+    id: "liamwilson",
+    password: "pass008",
+    name: "Liam Wilson",
+    avatarURL: "https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=Liam+Wilson",
+    answers: {},
+    questions: [],
+  },
+  charlotteclark: {
+    id: "charlotteclark",
+    password: "pass009",
+    name: "Charlotte Clark",
+    avatarURL: "https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=Charlotte+Clark",
+    answers: {},
+    questions: [],
+  },
+  ethanmoore: {
+    id: "ethanmoore",
+    password: "pass010",
+    name: "Ethan Moore",
+    avatarURL: "https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=Ethan+Moore",
+    answers: {},
     questions: [],
   },
 };
@@ -216,4 +295,3 @@ export function _saveQuestionAnswer({ authedUser, qid, answer }) {
     }, 500);
   });
 }
-
