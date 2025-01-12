@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import Poll from './Poll'
 
+
 const LandingPage = (props) => {
 	const { authedUser, questionIds, questions } = props
 
@@ -59,9 +60,9 @@ const LandingPage = (props) => {
 				{questionsToDisplay.length > 0 ? (
 					questionsToDisplay.map((q) => (
 						<li key={q.id}>
-							<Link to={`/questions/:question_${q.id}`} className="none">
+							<Link to={`/questions/:question_${q.id}`} className="none-poll">
 								<Poll id={q.id} />
-								console.log(q)
+
 							</Link>
 						</li>
 					))
