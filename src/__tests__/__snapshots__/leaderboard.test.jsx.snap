@@ -21,7 +21,7 @@ exports[`Leaderboard Component should match snapshot 1`] = `
             <img
               alt="john doe avatar"
               height="40"
-              src="https://example.com/avatar1.png"
+              src="https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=John+Doe"
               width="40"
             />
             <p>
@@ -50,7 +50,7 @@ exports[`Leaderboard Component should match snapshot 1`] = `
             <img
               alt="jane smith avatar"
               height="40"
-              src="https://example.com/avatar2.png"
+              src="https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=Jane+Doe"
               width="40"
             />
             <p>
