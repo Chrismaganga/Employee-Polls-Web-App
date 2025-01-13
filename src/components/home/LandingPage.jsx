@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
-import "../styles/leaderboard.css";
+import "./leaderboard.css";
 import { connect } from 'react-redux';
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Poll from "./Poll";
+import Poll from "../Poll";
 
 const LandingPage = (props) => {
   const { authedUser, questionIds, questions } = props;

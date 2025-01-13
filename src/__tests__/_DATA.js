@@ -1,9 +1,4 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
-/**
- * @jest-environment jsdom
- */
-
 import '@testing-library/jest-dom';
 import { expect, describe } from '@jest/globals';
 import {
@@ -53,7 +48,7 @@ describe('_DATA.js Snapshots', () => {
       author: 'johndoe'
     };
     const savedQuestion = await _saveQuestion(newQuestion);
-    // Remove timestamp and id for consistent snapshots
+    // eslint-disable-next-line no-unused-vars
     const { timestamp, id, ...rest } = savedQuestion;
     expect(rest).toMatchSnapshot();
   });
@@ -74,6 +69,34 @@ describe('_DATA.js Snapshots', () => {
     
     expect(typeof uid1).toBe('string');
     expect(uid1.length).toBeGreaterThan(0);
-    expect(uid1).not.toBe(uid2); // Two generated IDs should be different
+    expect(uid1).not.toBe(uid2);
+  });
+  it('should return the saved question for correctly formatted data', async () => {
+    const validQuestionData = {
+      optionOneText: 'Valid Option One',
+      optionTwoText: 'Valid Option Two',
+      author: 'johndoe'
+    };
+
+    const result = await _saveQuestion(validQuestionData);
+    expect(result).toHaveProperty('author', 'johndoe');
+    expect(result).toHaveProperty('optionOne');
+    expect(result).toHaveProperty('optionTwo');
+    expect(result).toHaveProperty('id');
+    expect(result).toHaveProperty('timestamp');
+  });
+
+  it('should return an error for incorrect data', async () => {
+    const invalidQuestionData = {
+      optionOneText: '', 
+      optionTwoText: 'Valid Option Two',
+      author: 'johndoe'
+    };
+
+    try {
+      await _saveQuestion(invalidQuestionData);
+    } catch (error) {
+      expect(error).toBe('Please provide optionOneText, optionTwoText, and author');
+    }
   });
 });

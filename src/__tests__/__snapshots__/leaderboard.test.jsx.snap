@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Leaderboard Component should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="leaderboard"
+  >
+    <h1
+      class="leaderboard-heading"
+    >
+       Leaderboard 
+    </h1>
+    <ul>
+      <li>
+        <div
+          class="board-entry"
+        >
+          <div
+            class="board-left"
+          >
+            <img
+              alt="john doe avatar"
+              height="40"
+              src="https://example.com/avatar1.png"
+              width="40"
+            />
+            <p>
+              John Doe
+            </p>
+          </div>
+          <div
+            class="board-right"
+          >
+            <p>
+              Questions: 2
+            </p>
+            <p>
+              Answers: 1
+            </p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="board-entry"
+        >
+          <div
+            class="board-left"
+          >
+            <img
+              alt="jane smith avatar"
+              height="40"
+              src="https://example.com/avatar2.png"
+              width="40"
+            />
+            <p>
+              Jane Smith
+            </p>
+          </div>
+          <div
+            class="board-right"
+          >
+            <p>
+              Questions: 1
+            </p>
+            <p>
+              Answers: 1
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
