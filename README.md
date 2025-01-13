@@ -26,5 +26,8 @@ cd Employee-Polls-Web-App
 npm install
 
 npm run dev
+
+
+##tests
 npm run test
 
